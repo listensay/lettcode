@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var findTheDifference = function(s, t) {
+            let n2 = t.length;
+
+            let r1 = s.split('').sort()
+            let r2 = t.split('').sort()
+
+            for (let i = 0; i < n2; i++) {
+                if (r1[i] !== r2[i]) {
+                    return r2[i];
+                }
+            }
+
+            return
+        };
+
+        const result = findTheDifference('', 'abcde');
+        console.log(result)
+    </script>
+</body>
+</html>
